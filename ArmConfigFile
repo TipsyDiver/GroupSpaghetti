@@ -1,0 +1,27 @@
+#include <Servo.h>
+
+Servo RotationAxis;
+Servo LowerBody;
+Servo MidBody;
+Servo UpperBody;
+Servo Gripper;
+
+void setup() {
+
+RotationAxis.attach(2);
+LowerBody.attach(3);
+MidBody.attach(4);
+UpperBody.attach(5);
+Gripper.attach(6);
+
+}
+
+void loop() {
+
+  RotationAxis.write(0);
+  LowerBody.write(0);
+  MidBody.write(0);
+  UpperBody.write(0);
+  Gripper.write(25);
+
+}
